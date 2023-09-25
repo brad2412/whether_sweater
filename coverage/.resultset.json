@@ -171,6 +171,51 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/bam/turing/3mod/projects/whether_sweater/app/facades/book_facade.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          4,
+          null,
+          null,
+          4,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/bam/turing/3mod/projects/whether_sweater/spec/facades/forecast_facade_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -197,11 +242,42 @@
           null
         ]
       },
-      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/forecast_request_spec.rb": {
+      "/Users/bam/turing/3mod/projects/whether_sweater/spec/poros/book_poro_spec.rb": {
         "lines": [
           1,
           null,
           1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/bam/turing/3mod/projects/whether_sweater/app/poros/book.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/services/book_service_spec.rb": {
+        "lines": [
+          1,
+          null,
           1,
           1,
           1,
@@ -211,102 +287,92 @@
           1,
           1,
           null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
           null,
           null,
           1,
           1,
           null,
-          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null
         ]
       },
-      "/Users/bam/turing/3mod/projects/whether_sweater/app/controllers/api/v1/forecast_controller.rb": {
+      "/Users/bam/turing/3mod/projects/whether_sweater/app/controllers/api/v1/book_search_controller.rb": {
         "lines": [
           1,
           1,
-          6,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
           null,
-          6,
-          6,
           null,
-          6,
           null,
-          6,
-          6,
-          6,
-          null,
-          6,
           null,
           null
         ]
@@ -317,12 +383,7 @@
           null
         ]
       },
-      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/geocoding_request_spec.rb": {
-        "lines": [
-
-        ]
-      },
-      "/Users/bam/turing/3mod/projects/whether_sweater/spec/services/forecast_service_spec.rb": {
+      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/services/forecast_service_spec.rb": {
         "lines": [
           1,
           null,
@@ -413,7 +474,23 @@
           null
         ]
       },
-      "/Users/bam/turing/3mod/projects/whether_sweater/spec/services/geocoding_service_spec.rb": {
+      "/Users/bam/turing/3mod/projects/whether_sweater/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/services/geocoding_service_spec.rb": {
         "lines": [
           1,
           null,
@@ -466,6 +543,24 @@
           1,
           1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/bam/turing/3mod/projects/whether_sweater/app/services/book_service.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          3,
           null,
           null
         ]
@@ -594,6 +689,11 @@
           1,
           7,
           7,
+          7,
+          null,
+          0,
+          0,
+          null,
           null,
           null
         ]
@@ -607,6 +707,6 @@
         ]
       }
     },
-    "timestamp": 1695616483
+    "timestamp": 1695665028
   }
 }
