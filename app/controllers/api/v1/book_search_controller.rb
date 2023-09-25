@@ -1,4 +1,4 @@
-class Api::V1::ForecastController < ApplicationController
+class Api::V1::BookSearchController < ApplicationController
   def index
     geocoding_params = params[:location]
     geocoding_facade = GeocodingFacade.new
@@ -7,6 +7,12 @@ class Api::V1::ForecastController < ApplicationController
     lat = location.lat
     lng = location.lng
     forecast = forecast_facade.receive_forecast(lat, lng)
-    render json: ForecastSerializer.new(forecast)
+    quantity = params[:quantity].to_i
+    books_location = params[:location]
+    books = BookFacade.search_books(books_location, quantity)
+    render json: BooksSerializer.new(books)
   end
 end
+
+
+
