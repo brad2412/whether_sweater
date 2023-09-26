@@ -1,4 +1,4 @@
-class BookSerializer
-  include JSONAPI::Serializer
-  attributes :isbn, :title
-end
+# class BookSerializer
+#   include JSONAPI::Serializer
+#   attributes :isbn, :title
+# end
