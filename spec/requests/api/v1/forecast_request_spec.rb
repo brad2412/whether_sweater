@@ -12,7 +12,7 @@ RSpec.describe Api::V1::ForecastController, type: :controller do
       expect(response).to have_http_status(:success)
     end
 
-    it "returns forecast data for the specified location" do
+    it "returns forecast data for the specified location", :vcr do
       get :index, params: { location: @location_details }
 
       response_body = JSON.parse(response.body, symbolize_names: true)

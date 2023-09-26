@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Forecast Service" do
   describe "#get forecast" do
-    it "can get forecasted weather for 5 days" do
+    it "can get forecasted weather for 5 days", :vcr do
       lat = "39.52766"
       lon = "-119.81353"
 

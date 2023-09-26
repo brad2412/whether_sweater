@@ -201,25 +201,25 @@
       },
       "/Users/bam/turing/3mod/projects/whether_sweater/spec/facades/yelp_facade_spec.rb": {
         "lines": [
-          1,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
           null,
-          1,
           null,
-          0,
           null,
-          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
         ]
       },
-      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/services/forecast_service_spec.rb": {
+      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/forecast_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -332,7 +332,7 @@
           null
         ]
       },
-      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/services/geocoding_service_spec.rb": {
+      "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/geocoding_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -391,12 +391,6 @@
       },
       "/Users/bam/turing/3mod/projects/whether_sweater/spec/requests/api/v1/yelp_request_spec.rb": {
         "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
           null,
           null,
           null,
@@ -409,47 +403,22 @@
           null,
           null,
           null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
           null,
           null,
           null,
           null,
           null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/bam/turing/3mod/projects/whether_sweater/app/poros/yelp.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
           null,
           null,
           null,
           null,
-          1,
           null,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -591,26 +560,6 @@
           null
         ]
       },
-      "/Users/bam/turing/3mod/projects/whether_sweater/app/services/yelp_service.rb": {
-        "lines": [
-          1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/bam/turing/3mod/projects/whether_sweater/app/serializers/forecast_serializer.rb": {
         "lines": [
           1,
@@ -620,6 +569,6 @@
         ]
       }
     },
-    "timestamp": 1695751463
+    "timestamp": 1695757498
   }
 }
