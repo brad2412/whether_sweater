@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v0/address?key=Loz3MNQu9SdjaFkbdYRvcbZKrLm5CpMn&location=Reno,%20NV
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:00:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '48'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - MapQuest
+    body:
+      encoding: UTF-8
+      string: '{"message":"no Route matched with those values"}'
+  recorded_at: Wed, 27 Sep 2023 04:00:00 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v0/forecast.json?days=5&key=3eb6cc289cbe4354b41222539232409&q=,
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:00:01 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-LA1-986
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=5
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '568623111'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '404'
+      Cdn-Cachedat:
+      - '09/27/2023 04:00:00'
+      Cdn-Edgestorageid:
+      - '1002'
+      Cdn-Status:
+      - '404'
+      Cdn-Requestid:
+      - 888c827ae1d2d29a3021650ce7a6b1ea
+      Cdn-Cache:
+      - HIT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 27 Sep 2023 04:00:01 GMT
+recorded_with: VCR 6.2.0

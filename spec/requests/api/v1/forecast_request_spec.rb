@@ -1,41 +1,50 @@
 require "rails_helper"
 
-RSpec.describe Api::V1::BookSearchController, type: :controller do
+RSpec.describe "Forecast Controller", type: :request do
   describe "index" do
     before do
       @location_details = "Reno, NV"
     end
 
     it "returns a successful response" do
-      get :index, params: { location: @location_details }
+      get '/api/v0/forecast', params: { location: @location_details }
 
       expect(response).to have_http_status(:success)
     end
 
-    it "returns book data for the specified location" do
-      get :index, params: { location: @location_details }
+    it "returns forecast data for the specified location", :vcr do
+      get '/api/v0/forecast', params: { location: @location_details }
 
       response_body = JSON.parse(response.body, symbolize_names: true)
-
       expect(response_body).to be_a(Hash)
       expect(response_body).to have_key(:data)
       expect(response_body[:data]).to have_key(:id)
       expect(response_body[:data]).to have_key(:type)
       expect(response_body[:data]).to have_key(:attributes)
-      expect(response_body[:data][:attributes]).to have_key(:destination)
-      expect(response_body[:data][:attributes]).to have_key(:forecast)
-      expect(response_body[:data][:attributes][:forecast]).to have_key(:summary)
-      expect(response_body[:data][:attributes][:forecast]).to have_key(:temperature)
-      expect(response_body[:data][:attributes]).to have_key(:total_books_found)
-      expect(response_body[:data][:attributes]).to have_key(:books)
-      expect(response_body[:data][:attributes][:books]).to be_an(Array)
+      expect(response_body[:data][:attributes]).to have_key(:current_weather)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:last_updated)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:temp_f)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:feelslike_f)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:humidity)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:uvi)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:visibility)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:condition)
+      expect(response_body[:data][:attributes][:current_weather]).to have_key(:icon)
+      expect(response_body[:data][:attributes][:daily_weather][0]).to have_key(:sunrise)
+      expect(response_body[:data][:attributes][:daily_weather][0]).to have_key(:maxtemp_f)
+      expect(response_body[:data][:attributes][:daily_weather][0]).to have_key(:mintemp_f)
+      expect(response_body[:data][:attributes][:daily_weather][0]).to have_key(:condition)
+      expect(response_body[:data][:attributes][:daily_weather][0]).to have_key(:icon)
+      expect(response_body[:data][:attributes][:hourly_weather][0]).to have_key(:time)
+      expect(response_body[:data][:attributes][:hourly_weather][0]).to have_key(:temperature)
+      expect(response_body[:data][:attributes][:hourly_weather][0]).to have_key(:conditions)
+      expect(response_body[:data][:attributes][:hourly_weather][0]).to have_key(:icon)
     end
 
     it "returns only the required information" do
-      get :index, params: { location: @location_details }
+      get '/api/v0/forecast', params: { location: @location_details }
 
       response_body = JSON.parse(response.body, symbolize_names: true)
-
 
       expect(response_body[:data][:attributes][:current_weather]).to_not have_key(:last_updated_epoch)
       expect(response_body[:data][:attributes][:current_weather]).to_not have_key(:temp_c)
