@@ -1,22 +1,21 @@
 require "rails_helper"
 
-RSpec.describe Api::V1::ForecastController, type: :controller do
+RSpec.describe "Forecast Controller", type: :request do
   describe "index" do
     before do
       @location_details = "Reno, NV"
     end
 
     it "returns a successful response" do
-      get :index, params: { location: @location_details }
+      get '/api/v0/forecast', params: { location: @location_details }
 
       expect(response).to have_http_status(:success)
     end
 
     it "returns forecast data for the specified location", :vcr do
-      get :index, params: { location: @location_details }
+      get '/api/v0/forecast', params: { location: @location_details }
 
       response_body = JSON.parse(response.body, symbolize_names: true)
-
       expect(response_body).to be_a(Hash)
       expect(response_body).to have_key(:data)
       expect(response_body[:data]).to have_key(:id)
@@ -43,7 +42,7 @@ RSpec.describe Api::V1::ForecastController, type: :controller do
     end
 
     it "returns only the required information" do
-      get :index, params: { location: @location_details }
+      get '/api/v0/forecast', params: { location: @location_details }
 
       response_body = JSON.parse(response.body, symbolize_names: true)
 

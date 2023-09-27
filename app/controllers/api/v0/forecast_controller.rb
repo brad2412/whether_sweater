@@ -1,4 +1,4 @@
-class Api::V1::ForecastController < ApplicationController
+class Api::V0::ForecastController < ApplicationController
   def index
     geocoding_params = params[:location]
     geocoding_facade = GeocodingFacade.new
