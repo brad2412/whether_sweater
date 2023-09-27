@@ -31,7 +31,17 @@ RSpec.describe Forecast do
                   text: "Sunny",
                   icon: "sunny_icon_url"
                 }
-              }
+              },
+              hour: [
+                {
+                  time: "2023-09-23 12:00:00",
+                  temp_f: 72.5,
+                  condition: {
+                    text: "Partly cloudy",
+                    icon: "icon_url"
+                  }
+                }
+              ]
             }
           ]
         }
